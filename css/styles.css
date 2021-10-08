@@ -767,22 +767,44 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.policies-element {
+.icon-check {
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid var(--primary-color-text);
+  border-radius: 3px;
+}
+
+/* .modal-checkbox {
+  margin-left: 8px;
+} */
+
+.modal-field-checkbox {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-}
-
-.modal-checkbox {
-  margin-left: 12px;
-}
-
-.modal-label-checkbox {
-  margin-left: 8px;
 
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-color-text);
+}
+
+.checkbox:checked + .icon-check {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url('../images/icons/icon-check.svg');
+  background-size: contain;
+  background-origin: content-box;
+}
+
+.policie-link {
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration-line: underline;
+
+  color: var(--accent-color);
 }
 
 .modal-button-submit {
