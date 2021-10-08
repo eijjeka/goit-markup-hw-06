@@ -413,7 +413,7 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-btn" type="button" data-modal-close>
+            <button class="modal-btn btn" type="button" data-modal-close>
                 <svg class="icon-close">
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
@@ -422,21 +422,21 @@
             <form class="modal-form">
                 <label class="modal-label" for="name">Имя</label>
                 <div class="input-element">
-                    <input class="modal-input" type="name" id="name">
+                    <input class="modal-input" type="name" id="name" autocomplete="off" required>
                     <svg class="icon-modal">
                         <use href="./images/symbol-defs.svg#icon-person-black"></use>
                     </svg>
                 </div>
                 <label class="modal-label" for="tel">Телефон</label>
                 <div class="input-element">
-                    <input class="modal-input" type="tel" id="tel">
+                    <input class="modal-input" type="tel" id="tel" autocomplete="off" required>
                     <svg class="icon-modal">
                         <use href="./images/symbol-defs.svg#icon-phone-black"></use>
                     </svg>
                 </div>
                 <label class="modal-label" for="email">Почта</label>
                 <div class="input-element">
-                    <input class="modal-input" type="email" id="email">
+                    <input class="modal-input" type="email" id="email" autocomplete="off" required>
                     <svg class="icon-modal">
                         <use href="./images/symbol-defs.svg#icon-email-black"></use>
                     </svg>
@@ -444,7 +444,7 @@
                 <label class="modal-label" for="coment">Комментарий</label>
                 <textarea name="" id="coment" placeholder="Введите текст"></textarea>
                 <div class="policies-element">
-                    <input class="modal-checkbox" type="checkbox" id="policies">
+                    <input class="modal-checkbox" type="checkbox" id="policies" required>
                     <label class="modal-label-checkbox" for="policies">Соглашаюсь с рассылкой и принимаю
                         <a href="">Условия договора</a>
                     </label>
