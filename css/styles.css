@@ -732,7 +732,8 @@ ul {
 }
 
 .input-element:focus-within,
-.input-element:focus-within .modal-input {
+.input-element:focus-within .modal-input,
+textarea:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
   outline: none;
