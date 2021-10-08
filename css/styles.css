@@ -463,22 +463,22 @@ ul {
 }
 
 .clients-link:hover,
-.clients-link:focus {
+.clients-link:focus,
+.clients-link:hover .icon-client,
+.clients-link:focus .icon-client {
   border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .icon-client {
-  width: 106px;
-  height: 60px;
-
   fill: var(--primary-icon-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover .icon-client,
+/* .clients-link:hover .icon-client,
 .clients-link:focus .icon-client {
   fill: var(--accent-color);
-}
+} */
 
 /* ---------------------------------------FOOTER----------------------------------------- */
 
@@ -647,6 +647,7 @@ ul {
   z-index: 5;
   width: 528px;
   min-height: 581px;
+  padding: 40px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -681,6 +682,94 @@ ul {
   width: 11px;
   height: 11px;
   fill: #000000;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--primary-color-text);
+}
+
+.modal-label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--secondary-color-text);
+}
+
+.input-element {
+  position: relative;
+}
+
+.modal-input {
+  width: 448px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.icon-modal {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+textarea {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.policies-element {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.modal-checkbox {
+  margin-left: 12px;
+}
+
+.modal-label-checkbox {
+  margin-left: 8px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-color-text);
+}
+
+.modal-button-submit {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /* -----------------/////////////////////PORTFOLIO///////////////////--------------------- */
 

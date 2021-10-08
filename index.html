@@ -304,42 +304,42 @@
                 <ul class="clients-list list">
                     <li class="clients-item">
                         <a href="" class="clients-link">
-                            <svg class="icon-client">
+                            <svg class="icon-client" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-client1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients-item">
                         <a href="" class="clients-link">
-                            <svg class="icon-client">
+                            <svg class="icon-client" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-client2"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients-item">
                         <a href="" class="clients-link">
-                            <svg class="icon-client">
+                            <svg class="icon-client" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-client3"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients-item">
                         <a href="" class="clients-link">
-                            <svg class="icon-client">
+                            <svg class="icon-client" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-client4"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients-item">
                         <a href="" class="clients-link">
-                            <svg class="icon-client">
+                            <svg class="icon-client" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-client5"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients-item">
                         <a href="" class="clients-link">
-                            <svg class="icon-client">
+                            <svg class="icon-client" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-client6"></use>
                             </svg>
                         </a>
@@ -401,7 +401,7 @@
             </div>
             <form class="footer-form">
                 <label class="footer-label" for="mail">Подпишитесь на рассылку</label>
-                <input class="footer-input" id="mail" name="mail" type="mail" placeholder="E-mail">
+                <input class="footer-input" id="mail" name="mail" type="mail" placeholder="E-mail" autocomplete="off">
                 <button class="footer-form-button btn" type="submit">Подписаться<svg class="icon-send" width="24"
                         height="24">
                         <use href="./images/symbol-defs.svg#icon-send"></use>
@@ -418,6 +418,39 @@
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form class="modal-form">
+                <label class="modal-label" for="name">Имя</label>
+                <div class="input-element">
+                    <input class="modal-input" type="name" id="name">
+                    <svg class="icon-modal">
+                        <use href="./images/symbol-defs.svg#icon-person-black"></use>
+                    </svg>
+                </div>
+                <label class="modal-label" for="tel">Телефон</label>
+                <div class="input-element">
+                    <input class="modal-input" type="tel" id="tel">
+                    <svg class="icon-modal">
+                        <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                    </svg>
+                </div>
+                <label class="modal-label" for="email">Почта</label>
+                <div class="input-element">
+                    <input class="modal-input" type="email" id="email">
+                    <svg class="icon-modal">
+                        <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                    </svg>
+                </div>
+                <label class="modal-label" for="coment">Комментарий</label>
+                <textarea name="" id="coment" placeholder="Введите текст"></textarea>
+                <div class="policies-element">
+                    <input class="modal-checkbox" type="checkbox" id="policies">
+                    <label class="modal-label-checkbox" for="policies">Соглашаюсь с рассылкой и принимаю
+                        <a href="">Условия договора</a>
+                    </label>
+                </div>
+                <button class="modal-button-submit btn" type="submit">Отправить</button>
+            </form>
         </div>
     </div>
 
