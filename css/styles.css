@@ -800,6 +800,7 @@ textarea::placeholder {
 }
 
 .policie-link {
+  margin-left: 2px;
   font-size: 14px;
   line-height: 1.71;
   text-decoration-line: underline;
