@@ -264,34 +264,9 @@ ul {
   height: 120px;
   margin-bottom: 30px;
 
-  background-color: #eee;
+  background-color: #f5f4fa;
   border-radius: 4px;
 }
-
-/* .advantage-item::before {
-  content: "";
-  display: block;
-  height: 120px;
-  margin-bottom: 40px;
-  border-radius: 4px;
-
-  background-color: var(--primary-bg-color);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-antenna::before {
-  background-image: url(../images/icons/antenna.svg);
-}
-.icon-clock::before {
-  background-image: url(../images/icons/clock.svg);
-}
-.icon-diagram::before {
-  background-image: url(../images/icons/diagram.svg);
-}
-.icon-astronaut::before {
-  background-image: url(../images/icons/astronaut.svg);
-} */
 
 .advantage-title {
   margin-bottom: 10px;
@@ -408,31 +383,28 @@ ul {
 }
 
 .social-link {
+  color: var(--primary-icon-color);
   width: 44px;
   height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social {
   width: 20px;
   height: 20px;
-  fill: var(--primary-icon-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: currentColor;
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-}
-
-.social-link:hover .icon-social,
-.social-link:focus .icon-social {
-  fill: var(--accent-icon-color);
+  color: var(--accent-icon-color);
 }
 
 /* ----------------------------------------------CLIENTS----------------------------------------- */
@@ -450,6 +422,7 @@ ul {
 }
 
 .clients-link {
+  color: var(--primary-icon-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -459,27 +432,19 @@ ul {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
-.clients-link:focus,
-.clients-link:hover .icon-client,
-.clients-link:focus .icon-client {
+.clients-link:focus {
   border-color: var(--accent-color);
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .icon-client {
-  fill: var(--primary-icon-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: currentColor;
 }
-
-/* .clients-link:hover .icon-client,
-.clients-link:focus .icon-client {
-  fill: var(--accent-color);
-} */
-
 /* ---------------------------------------FOOTER----------------------------------------- */
 
 .footer {
@@ -537,6 +502,7 @@ ul {
 }
 
 .connected-title {
+  display: inline-block;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -573,10 +539,10 @@ ul {
 /*-----------------/////////////////FOOTER-FORM///////////////-------------------------*/
 
 .footer-form {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
-.footer-label {
+.footer-input-title {
   display: block;
   margin-bottom: 20px;
 
@@ -602,11 +568,12 @@ ul {
 }
 
 .footer-form-button {
-  width: 200px;
+  max-width: 200px;
   height: 50px;
   padding: 10px 28px;
   margin-left: 13px;
 
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
 
@@ -666,12 +633,11 @@ ul {
 
 .modal-btn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
 
   width: 30px;
   height: 30px;
-  margin: 8px 8px;
 
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -683,6 +649,8 @@ ul {
   width: 11px;
   height: 11px;
   fill: #000000;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover .icon-close,
@@ -707,7 +675,7 @@ ul {
 }
 
 .modal-label {
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 
   font-size: 12px;
   line-height: 1.16;
@@ -717,26 +685,26 @@ ul {
 
 .input-element {
   position: relative;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 4px;
 }
 
 .modal-input {
   width: 100%;
   height: 40px;
-  margin-bottom: 10px;
   padding-left: 42px;
 
   cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-element:focus-within,
 .input-element:focus-within .modal-input,
-textarea:focus {
+.input-element:hover,
+.input-element:hover .modal-input,
+textarea:focus,
+textarea:hover {
   border-color: var(--accent-color);
   fill: var(--accent-color);
   outline: none;
@@ -748,20 +716,20 @@ textarea:focus {
   left: 12px;
   width: 18px;
   height: 18px;
+  cursor: pointer;
 }
 
 textarea {
   width: 100%;
   height: 120px;
   resize: none;
+  margin-top: 4px;
   margin-bottom: 20px;
   padding: 12px 16px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 textarea::placeholder {
@@ -780,11 +748,10 @@ textarea::placeholder {
 
   border: 2px solid var(--primary-color-text);
   border-radius: 3px;
-}
 
-/* .modal-checkbox {
-  margin-left: 8px;
-} */
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal-field-checkbox {
   display: flex;
@@ -826,8 +793,14 @@ textarea::placeholder {
   letter-spacing: 0.06em;
 
   background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button-submit:hover,
+.modal-button-submit:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* -----------------/////////////////////PORTFOLIO///////////////////--------------------- */
 
