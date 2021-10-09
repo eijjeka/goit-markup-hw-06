@@ -675,6 +675,7 @@ ul {
 }
 
 .modal-label {
+  position: relative;
   margin-bottom: 10px;
 
   font-size: 12px;
@@ -683,15 +684,11 @@ ul {
   color: var(--secondary-color-text);
 }
 
-.input-element {
-  position: relative;
-  margin-top: 4px;
-}
-
 .modal-input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
+  margin-top: 4px;
 
   cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -699,10 +696,10 @@ ul {
   border-radius: 4px;
 }
 
-.input-element:focus-within,
-.input-element:focus-within .modal-input,
-.input-element:hover,
-.input-element:hover .modal-input,
+.modal-label:focus-within,
+.modal-label:focus-within .modal-input,
+.modal-label:hover,
+.modal-label:hover .modal-input,
 textarea:focus,
 textarea:hover {
   border-color: var(--accent-color);
@@ -712,7 +709,7 @@ textarea:hover {
 
 .icon-modal {
   position: absolute;
-  top: 11px;
+  top: 27px;
   left: 12px;
   width: 18px;
   height: 18px;
